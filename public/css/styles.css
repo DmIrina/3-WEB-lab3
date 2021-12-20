@@ -1,0 +1,370 @@
+:root {
+            --blue: #0000ff;
+            --white: #fff;
+            --color-shadow-after: #f5a107;
+            --color-shadow-before: #1ff507;
+			--shadow-left: 3px;
+			--shadow-right: -3px;
+			--text-left: 4px;			
+			--background-main: #102040;
+}
+
+body {
+	font-family: 'Varela', sans-serif;
+    background: #FAF2D6;
+    color: #302E2D;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.input-field {
+    margin-left: 1em;
+    padding: .5em;
+    margin-bottom: .5em;
+    width: 180px;
+}
+
+.input-color {
+    margin-left: 1em;
+    padding: .1em;
+    margin-bottom: .5em;
+    height: 40px;
+    width: 200px;
+}
+
+.btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button3 {
+    background-color: white;
+    color: black;
+    border: 2px solid #f44336;
+    border-radius: 8px;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white ;
+}
+
+.wrapper {
+        padding: 20px;
+        margin:15px 0;
+        background-color: #0f9d58;
+}
+
+textarea {
+        font-size:20px;
+        width:100%;
+    }
+
+.left-col {
+    width: 25%;
+
+}
+
+.width_75{
+    width: 75%;
+}
+
+.width_25{
+    width: 25%;
+}
+
+
+.right-col{
+    float: right;
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    margin: 0 auto;
+}
+
+footer{
+     padding: 10px;
+    display: flex;
+ }
+
+.container {
+    display: flex;
+    clear: both;
+}
+
+.left_sided{
+    padding-left: 10px;
+}
+
+.center-col {
+    width: 50%;
+}
+
+.align_right {
+    text-align: right;
+}
+
+.align_center {
+    text-align: center;
+}
+
+section, main, aside{
+    padding: 12px;
+}
+
+aside {
+    width: 25%;
+}
+
+.yellow-label{
+    background: #dbda95;
+    min-width: 35%;
+    float: right;
+    padding: 3px;
+}
+
+.blue{
+    background: #76bcee;
+}
+
+.green{
+    background: #a0db98;
+}
+
+.pink{
+    background: #dbaac3;
+}
+.yellow{
+    background: var(--background-main);
+	color: #A1A1A1;
+}
+
+nav {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.centered{
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+    margin: 0 auto;
+}
+
+nav li a {
+    display: block;
+    color: #000000;
+    background: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin: 2px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #8B0000;
+}
+
+.glitchdiv{
+	align-items: self-start;
+}
+
+.glitch {
+    color: white;
+    font-size: 100px;
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.glitch:after {                                 /* псевдоэлемент */
+    content: attr(data-text);
+    position: absolute;
+    left: var(--text-left);
+    text-shadow: var(--shadow-right) 0 var(--color-shadow-after);
+    top: 0;
+    color: #faf2f2;
+    background: var(--background-main);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 3s infinite linear alternate-reverse;
+}
+.glitch:before {
+    content: attr(data-text);                       /* заповнити з атрибута data-text */
+    position: absolute;
+    left: -2px;
+    text-shadow: var(--shadow-left) 0 var(--color-shadow-before);
+    top: 0;
+    color: white;
+    background: var(--background-main);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 2s infinite linear alternate-reverse;
+    /* linear	- анімація відбувається рівномірно протягом всього часу
+       infinite - програвати постійно
+       alternate - непарний цикл програвати у прямоиу напрямі, парний у зворотньому  */
+}
+
+/*@keyframes - правило, що визначає значенння свойств анимації у різних  точках анімації
+  застосовується для псевдоелемента - слоя glitch:after
+  Ключові кадри визначають поведінку  одного циклу анімації */
+@keyframes noise-anim {
+
+    0% {                                            /*from  0с  */
+        clip: rect(75px, 9999px, 52px, 0);
+    }
+    5% {
+        clip: rect(80px, 9999px, 15px, 0);
+    }
+    10% {
+        clip: rect(11px, 9999px, 10px, 0);
+    }
+    15% {
+        clip: rect(58px, 9999px, 90px, 0);
+    }
+    20% {
+        clip: rect(55px, 9999px, 5px, 0);
+    }
+    25% {
+        clip: rect(93px, 9999px, 78px, 0);
+    }
+    30% {
+        clip: rect(5px, 9999px, 93px, 0);
+    }
+    35% {
+        clip: rect(68px, 9999px, 50px, 0);
+    }
+    40% {
+        clip: rect(26px, 9999px, 34px, 0);
+    }
+    45% {
+        clip: rect(71px, 9999px, 57px, 0);
+    }
+    50% {
+        clip: rect(57px, 9999px, 70px, 0);
+    }
+    55% {
+        clip: rect(58px, 9999px, 57px, 0);
+    }
+    60% {
+        clip: rect(45px, 9999px, 18px, 0);
+    }
+    65% {
+        clip: rect(28px, 9999px, 24px, 0);
+    }
+    70% {
+        clip: rect(50px, 9999px, 7px, 0);
+    }
+    75% {
+        clip: rect(71px, 9999px, 6px, 0);
+    }
+    80% {
+        clip: rect(16px, 9999px, 86px, 0);
+    }
+    85% {
+        clip: rect(49px, 9999px, 73px, 0);
+    }
+    90% {
+        clip: rect(15px, 9999px, 15px, 0);
+    }
+    95% {
+        clip: rect(46px, 9999px, 71px, 0);
+    }
+    100% {                                          /*to 2с */
+        clip: rect(98px, 9999px, 11px, 0);
+    }
+
+}
+
+@keyframes noise-anim-2 {
+    0% {
+        clip: rect(55px, 9999px, 24px, 0);
+    }
+    5% {
+        clip: rect(79px, 9999px, 71px, 0);
+    }
+    10% {
+        clip: rect(81px, 9999px, 42px, 0);
+    }
+    15% {
+        clip: rect(24px, 9999px, 10px, 0);
+    }
+    20% {
+        clip: rect(20px, 9999px, 70px, 0);
+    }
+    25% {
+        clip: rect(64px, 9999px, 16px, 0);
+    }
+    30% {
+        clip: rect(14px, 9999px, 11px, 0);
+    }
+    35% {
+        clip: rect(94px, 9999px, 82px, 0);
+    }
+    40% {
+        clip: rect(50px, 9999px, 82px, 0);
+    }
+    45% {
+        clip: rect(65px, 9999px, 80px, 0);
+    }
+    50% {
+        clip: rect(95px, 9999px, 53px, 0);
+    }
+    55% {
+        clip: rect(17px, 9999px, 25px, 0);
+    }
+    60% {
+        clip: rect(65px, 9999px, 58px, 0);
+    }
+    65% {
+        clip: rect(15px, 9999px, 14px, 0);
+    }
+    70% {
+        clip: rect(57px, 9999px, 19px, 0);
+    }
+    75% {
+        clip: rect(50px, 9999px, 61px, 0);
+    }
+    80% {
+        clip: rect(4px, 9999px, 80px, 0);
+    }
+    85% {
+        clip: rect(44px, 9999px, 61px, 0);
+    }
+    90% {
+        clip: rect(70px, 9999px, 83px, 0);
+    }
+    95% {
+        clip: rect(24px, 9999px, 16px, 0);
+    }
+    100% {
+        clip: rect(94px, 9999px, 50px, 0);
+    }
+}
+

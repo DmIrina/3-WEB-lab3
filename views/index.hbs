@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<body>
+<div class="container">
+    <article class="left-col pink">
+        <!-- --------------------------------------------------------- BLOCK 2 ------------------- -->
+        <section id="block2" class="green">
+            <div id="txt2">
+                List of Bosses:
+            </div>
+        </section>
+        <!-- ----------------------------------------------------------- BLOCK 5 ------------------- -->
+        <section id="block5" class="pink">
+            <div id="txt5">
+                <ol>
+                    <li>Andrius (Wolvendom, Mondstadt)</li>
+                    <li>Dvalin (Stormterror's Lair, Mondstadt)</li>
+                    <li>Childe (Golden House, Liyue)</li>
+                    <li>Azhdaha (Nantianmen, Liyue)</li>
+                    <li>Signora (Tenshukaku, Inazuma)</li>
+                </ol>
+            </div>
+        </section>
+    </article>
+
+    <article class="center-col green">
+        <!-- --------------------------------------------------------- BLOCK 3 ------------------- -->
+        <main id='block3' class="yellow">
+            <div id="txt3">
+
+                <!-- ------------------------------------------місце для глюків ------------------- -->
+                <div id='glitches' class='glitchdiv'>
+                </div>
+
+                <p>
+                    Weekly Bosses are even more difficult than Normal Bosses and provide players with even greater
+                    rewards.
+                    After defeating each boss, a Trounce Blossom will spawn and players can choose to spend Original
+                    Resin
+                    Original Resin ×30 to claim the rewards from the first three weekly bosses of their choice, and then
+                    Original Resin Original Resin ×60 subsequently. Each boss reward will reset in a player's world
+                    every
+                    week on
+                    Monday at 4 AM (server time).
+                </p>
+
+            </div>
+        </main>
+        <!-- -------------------------------------------------- BLOCK 6 ------------------- -->
+        <section id='block6' class="green">
+            <div id="txt6">
+                <p>
+                    All weekly bosses reward Adventure EXP Adventure EXP ×300 along with a certain amount of Mora Mora
+                    and
+                    Companionship EXP Companionship EXP depending on the player's World Level. There is also a chance
+                    they
+                    will
+                    drop certain Character Ascension Materials, Artifacts, and Northlander Billets (Northlander Sword
+                    Billet
+                    Sword, Northlander Bow Billet Bow, Northlander Claymore Billet Claymore Northlander Catalyst Billet
+                    Catalyst,
+                    Northlander Polearm Billet Polearm) depending on the domain level (DL) for Azhdaha, Dvalin and
+                    Childe,
+                    and world level (WL) for Andrius.
+                </p>
+            </div>
+
+        </section>
+    </article>
+
+    <!-- ------------------------------------------------------------------------------ BLOCK 4 ------------------- -->
+    <aside id="block4" class="pink ">
+        <div id="txt4">
+            <h2>Info about Genshin Impact</h2>
+            <p>
+                Genshin Impact is an open-world, action RPG developed and published by miHoYo for PC,
+                iOS/Android, and PS4/PS5 platforms. The game is Free-to-Play with a Gacha monetization system in the
+                form of Wishes.
+            </p>
+            <p>
+                Text was taken from Genshin Impact Wiki: an English resource for information about the Global version of
+                the game.
+            </p>
+            <div>
+
+                <!-- ---------------------------------- додати новий глюк ------------------- -->
+                <div class="row">
+                    <label for="gltext">Текст:</label>
+                    <input type="text" id="gltext" class="input-field" value='GLITCH'/>
+                </div>
+
+                <div class="row">
+                    <label for="gltext">Розмір:</label>
+                    <input type="number" id="glsize" class="input-field" min="20" max="150" value='50'/>
+                </div>
+
+                <div class="row">
+                    <label for="glcolor">Колір:</label>
+                    <input type="color" id="glcolor" min="20" max="150" class="input-color" value="#FAFEE0"/>
+                </div>
+
+                <button class="btn button3" onclick="newGlitch()">Новий об'єкт</button>
+
+
+            </div>
+        </div>
+    </aside>
+</div>
+
+</body>
+</html>

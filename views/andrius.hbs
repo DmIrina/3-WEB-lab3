@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+<div class="container">
+    <article class="left-col pink">
+        <section class="green">
+            List of Bosses:
+        </section>
+
+        <section class="pink">
+            <ol>
+                <li>Andrius (Wolvendom, Mondstadt)</li>
+                <li>Dvalin (Stormterror's Lair, Mondstadt)</li>
+                <li>Childe (Golden House, Liyue)</li>
+                <li>Azhdaha (Nantianmen, Liyue)</li>
+                <li>Signora (Tenshukaku, Inazuma)</li>
+            </ol>
+        </section>
+    </article>
+
+    <article class="center-col green">
+        <main class="yellow">
+            <p>
+            <h1>{{text}}</h1>
+
+            <!-- ------------------------------------------місце для глюків ------------------- -->
+            <div id="glitches" class='glitchdiv'>
+            </div>
+
+        </main>
+
+        <section class="green">
+            <h3>Additionally</h3>
+            <p>Andrius has full immunity to Anemo and Cryo damage and 10% resistance to all other forms of damage.</p>
+            <img src="img/andrius.png" alt="Andrius">
+        </section>
+    </article>
+
+    <aside id="block4" class="pink align_center">
+        <div id="txt4">
+            <h2>Info about Genshin Impact</h2>
+            <p>
+                Genshin Impact is an open-world, action RPG developed and published by miHoYo for PC,
+                iOS/Android, and PS4/PS5 platforms. The game is Free-to-Play with a Gacha monetization system in the
+                form of Wishes.
+            </p>
+            <p>
+                Text was taken from Genshin Impact Wiki: an English resource for information about the Global version of
+                the game.
+            </p>
+
+            <!-- ---------------------------------- відобразити/стерти глюки ------------------- -->
+            <div>
+                <button class="btn button3" onclick="getGlitches()">Отримати елементи з сервера</button>
+                <button class="btn button3" onclick="delGlitches()">Стерти Glitch елементи</button>
+            </div>
+        </div>
+    </aside>
+</div>
+</body>
+</html>
